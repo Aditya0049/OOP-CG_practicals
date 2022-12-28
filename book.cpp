@@ -36,12 +36,11 @@ int main(){
         b1.getdata();
         b1.display();
         if(b1.book_name == "TTFF"){
+            b1.book_name = "0";
             throw b1.book_name;
-        }else{
-            cout<<" \n Not read yet";
         }
     }catch(string book){
-        cout<<" \n Book Already read";
+        cout<<"\n"<<book;
     }
     return 0;
 }
